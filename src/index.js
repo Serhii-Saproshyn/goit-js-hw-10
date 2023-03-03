@@ -56,7 +56,7 @@ function createInfo(data) {
     ({ name, capital, population, flags, languages }) =>
       `<h1 class="country-info__title"><img src="${flags.svg}" alt="${
         name.official
-      }" width="80" height="40">${name.official}</h1>
+      }" width="40" height="40">${name.official}</h1>
       <p class="country-info__description">Capital: ${capital}</p>
       <p class="country-info__description">Population: ${population}</p>
       <p class="country-info__description">Languages: ${Object.values(
@@ -70,7 +70,7 @@ function createList(data) {
   return data
     .map(
       ({ name, flags }) =>
-        `<li class="country-list__item"><img src="${flags.svg}" alt="${name.official}" width="80" height="40"><span>${name.official}</span></li>`
+        `<li class="country-list__item"><img src="${flags.svg}" alt="${name.official}" width="40" height="40"><span>${name.official}</span></li>`
     )
     .join('');
 }
